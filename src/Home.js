@@ -16,12 +16,15 @@ function Home() {
       })
       .then((data) => {
         console.log(data);
+        setBlogs(data);
       });
   }, []);
 
   return (
     <div className="home">
-      {blogs && <BlogList blogs={blogs} title="All Blogs" handleDelete={deleteBlog} />}
+      {blogs && (
+        <BlogList blogs={blogs} title="All Blogs" handleDelete={deleteBlog} />
+      )}
     </div>
   );
 }
