@@ -21,7 +21,7 @@ function Home() {
 
   return (
     <div className="home">
-      {/* <BlogList blogs={blogs} title="All Blogs" handleDelete={deleteBlog} /> */}
+      {blogs && <BlogList blogs={blogs} title="All Blogs" handleDelete={deleteBlog} />}
     </div>
   );
 }
