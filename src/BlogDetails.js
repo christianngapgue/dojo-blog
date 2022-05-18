@@ -9,7 +9,7 @@ function BlogDetails() {
   );
 
   return (
-    <div id="blog-details">
+    <div className="blog-details">
       {isPending && <div>Loading...</div>}
       {error && <div>{error}</div>}
       {data && (
